@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio.css">
+    <title>Pátio de Automóveis</title>
+        
+    
+</head>
+<body>
+
+<div class="patio">
+    <div class="regiao" id="regiao1" data-ocupacao="0" onclick="mostrarAutomoveis('regiao1')">Área 1</div>
+    <div class="regiao" id="regiao2" data-ocupacao="5" onclick="mostrarAutomoveis('regiao2')">Área 2</div>
+    <div class="regiao" id="regiao3" data-ocupacao="0" onclick="mostrarAutomoveis('regiao3')">Área 3</div>
+    <div class="regiao" id="regiao4" data-ocupacao="3" onclick="mostrarAutomoveis('regiao4')">Área 4</div>
+    <div class="regiao" id="regiao5" data-ocupacao="0" onclick="mostrarAutomoveis('regiao5')">Área 5</div>
+    <div class="regiao" id="regiao6" data-ocupacao="5" onclick="mostrarAutomoveis('regiao6')">Área 6</div>
+    <div class="regiao" id="regiao7" data-ocupacao="3" onclick="mostrarAutomoveis('regiao7')">Área 7</div>
+    <div class="regiao" id="regiao8" data-ocupacao="3" onclick="mostrarAutomoveis('regiao8')">Área 8</div>
+    <div class="regiao" id="regiao9" data-ocupacao="3" onclick="mostrarAutomoveis('regiao9')">Área 9</div>
+    <div class="regiao" id="regiao10" data-ocupacao="3" onclick="mostrarAutomoveis('regiao10')">Área 10</div>
+</div>
+<!-- Modal de informações dos automóveis -->
+<div id="modalInformacoes" class="modal">
+    <div class="modal-content">
+        <span id="fecharModal" class="fechar">&times;</span>
+        <h2>Automóveis na Região</h2>
+        <div id="listaAutomoveis"></div>
+    </div>
+</div>
+<script src="inicio.js"></script>
+</body>
+</html>
