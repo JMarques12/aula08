@@ -71,7 +71,7 @@ body {
 }
 
 .form-container button {
-    background-color: #28a745;
+    background-color: #8c28a7;
     color: white;
     padding: 10px;
     border: none;
@@ -80,7 +80,7 @@ body {
 }
 
 .form-container button:hover {
-    background-color: #218838;
+    background-color: #8c28a7;
 }
 
 .lista-carros {
