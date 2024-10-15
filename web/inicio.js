@@ -45,6 +45,17 @@ function abrirModalVenda(automovel) {
     // Aqui você pode implementar a lógica para abrir o modal de venda.
 }
 
+function atualizarCorRegiao(idRegiao) {
+    const regiao = document.getElementById(idRegiao);
+    const ocupacao = parseInt(regiao.getAttribute('data-ocupacao'));
+
+    if (ocupacao > 0) {
+        regiao.style.backgroundColor = '#0000FF'; // Azul se ocupado
+    } else {
+        regiao.style.backgroundColor = '#FFFFFF'; // Branco se vazio
+    }
+}
+
 // Fechar o modal de informações
 document.getElementById('fecharModal').onclick = function() {
     document.getElementById('modalInformacoes').style.display = 'none';
@@ -57,3 +68,26 @@ window.onclick = function(event) {
         modal.style.display = 'none';
     }
 }
+
+// Função para adicionar um carro e atualizar a ocupação
+function adicionarCarro(idRegiao) {
+    const regiao = document.getElementById(idRegiao);
+    let ocupacaoAtual = parseInt(regiao.getAttribute('data-ocupacao'));
+    ocupacaoAtual++;
+    regiao.setAttribute('data-ocupacao', ocupacaoAtual);
+    atualizarCorRegiao(idRegiao);
+}
+
+// Função para remover um carro e atualizar a ocupação
+function removerCarro(idRegiao) {
+    const regiao = document.getElementById(idRegiao);
+    let ocupacaoAtual = parseInt(regiao.getAttribute('data-ocupacao'));
+    
+    if (ocupacaoAtual > 0) {
+        ocupacaoAtual--;
+        regiao.setAttribute('data-ocupacao', ocupacaoAtual);
+        atualizarCorRegiao(idRegiao);
+    }
+}
+
+// Chame essas funções ao adicionar ou remover carros

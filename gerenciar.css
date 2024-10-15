@@ -1,0 +1,92 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.patio {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.regiao {
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute;
+}
+
+.regiao[data-ocupacao="0"] {
+    background-color: #FFFFFF; /* Branco */
+}
+
+.regiao[data-ocupacao="1"],
+.regiao[data-ocupacao="2"],
+.regiao[data-ocupacao="3"],
+.regiao[data-ocupacao="4"],
+.regiao[data-ocupacao="5"] {
+    background-color: #0000FF; /* Azul para áreas ocupadas */
+}
+
+/* Defina os tamanhos e posições das regiões aqui */
+#regiao1 { width: 300px; height: 200px; top: 20px; left: 20px; }
+#regiao2 { width: 400px; height: 200px; top: 20px; left: 350px; }
+#regiao3 { width: 300px; height: 150px; top: 240px; left: 20px; }
+#regiao4 { width: 300px; height: 450px; top: 240px; left: 240px; }
+#regiao5 { width: 400px; height: 500px; top: 400px; left: 20px; }
+#regiao6 { width: 200px; height: 200px; top: 400px; left: 240px; }
+#regiao7 { width: 350px; height: 250px; top: 20px; left: 680px; }
+#regiao8 { width: 100px; height: 100px; top: 280px; left: 680px; }
+#regiao9 { width: 400px; height: 200px; top: 280px; left: 800px; }
+#regiao10 { width: 250px; height: 350px; top: 400px; left: 680px; }
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.form-container {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.form-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #218838;
+}
+
+.lista-carros {
+    margin-top: 20px;
+}
+
+.lista-carros div {
+    margin: 5px 0;
+}
