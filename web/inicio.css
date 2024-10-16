@@ -48,16 +48,16 @@ html, body {
 }
 
 #regiao4 {
-    width: 300px; 
-    height: 450px; 
+    width: 400px; 
+    height: 350px; 
     background-color: #0000FF; /* Azul */
-    top: 240px;
-    left: 240px;
+    top: 340px;
+    left: 340px;
 }
 
 #regiao5 {
     width: 400px; 
-    height: 500px; 
+    height: 400px; 
     background-color: #FFFFFF; /* Branco */
     top: 400px;
     left: 20px;
@@ -65,7 +65,7 @@ html, body {
 
 #regiao6 {
     width: 200px; 
-    height: 200px; 
+    height: 100px; 
     background-color: #0000FF; /* Azul */
     top: 400px;
     left: 240px;
